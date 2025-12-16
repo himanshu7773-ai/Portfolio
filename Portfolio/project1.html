@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2196f3, #00bcd4);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #2196f3;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: #2196f3;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #1976d2;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My First Web Project</h1>
+    <p>Simple Landing Page using HTML & CSS</p>
+  </header>
+
+  <section>
+    <h2>Why This Project?</h2>
+    <p>This project shows my understanding of basic HTML structure and CSS styling.</p>
+
+    <div class="features">
+      <div class="card">
+        <h3>Clean Design</h3>
+        <p>Simple and neat layout using CSS.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive</h3>
+        <p>Works well on mobile and desktop screens.</p>
+      </div>
+      <div class="card">
+        <h3>Beginner Friendly</h3>
+        <p>Easy code structure for learning.</p>
+      </div>
+    </div>
+
+    <a href="#" class="btn">Learn More</a>
+  </section>
+
+  <footer>
+    <p>© 2025 My First Project</p>
+  </footer>
+
+</body>
+</html>

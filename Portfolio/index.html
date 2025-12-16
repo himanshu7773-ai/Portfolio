@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Modern Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #3f42f6, #3ad9f5);
+      color: #292626;
+      padding: 60px 20px;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0e7ff;
+    }
+
+    nav {
+      background: #1e293b;
+      padding: 12px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px 3px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #6366f1;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #1e293b;
+    }
+
+    .about p {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: #334155;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .skill {
+      background: linear-gradient(135deg,#6366f1,#22d3ee);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .skill:hover {
+      background: linear-gradient(135deg,#f472b6,#facc15);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(55, 1, 127, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+      color: #6366f1;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 30px;
+      background: linear-gradient(135deg,#d263f1,#6be2f5);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .project a:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #334155;
+    }
+
+    footer {
+      background: #392245;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #6366f1;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Himanshu</h1>
+    <p>Web Developer | Beginner</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I am a beginner web developer. I have basic knowledge of HTML and CSS, and I am learning to work on new projects.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <button class="skill">HTML</button>
+      <button class="skill">CSS</button>
+      <button class="skill">Basic JavaScript</button>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project 1</h3>
+        <a href="project1.html" target="_blank">View Project 1</a>
+        <p>Simple HTML website</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <a href="project2.html" target="_blank">View Project 2</a>
+        <p>CSS styled page</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: sainhimanshu746@gmail.com</p>
+    <p>Mobile: 7742713904</p>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h3>Himanshu</h3>
+      <p>Beginner Web Developer | Learning & Growing Everyday</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com">LinkedIn</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+      </div>
+      <p>© 2025 Himanshu. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

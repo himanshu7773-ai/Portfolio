@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 2 – Modern Website</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:#e5e7eb;
+      line-height:1.6;
+    }
+
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background: linear-gradient(135deg,#6366f1,#22d3ee);
+      color:#fff;
+      padding:40px 20px;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
+
+    header p{
+      font-size:1.2rem;
+      max-width:600px;
+      margin:auto;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 35px;
+      background:#02566c;
+      color:#d3d0d0;
+      text-decoration:none;
+      border-radius:30px;
+      font-size:1rem;
+      transition:all 0.3s ease;
+    }
+
+    .btn:hover{
+      background:#0a30dc;
+      transform:scale(1.05);
+    }
+
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:70px 20px;
+    }
+
+    section h2{
+      text-align:center;
+      font-size:2.2rem;
+      margin-bottom:40px;
+      color:#38bdf8;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#020617;
+      padding:30px;
+      border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.4);
+      transition:all 0.4s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    .card h3{
+      color:#a5b4fc;
+      margin-bottom:10px;
+    }
+
+    footer{
+      background:#020617;
+      text-align:center;
+      padding:25px 15px;
+      color:#94a3b8;
+    }
+
+    @media(max-width:600px){
+      header h1{
+        font-size:2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Modern Web Design</h1>
+    <p>A dark themed responsive website showcasing advanced HTML & CSS skills.</p>
+    <a href="#features" class="btn">Explore Features</a>
+  </div>
+</header>
+
+<section id="features">
+  <h2>Project Highlights</h2>
+  <div class="cards">
+    <div class="card">
+      <!-- <h3>Modern UI</h3> -->
+      <a href="project2details.html" target="_blank" class="btnd"><h3>Modern UI</h3></a>
+      <p>Dark theme with gradient colors for a premium look.</p>
+    </div>
+    <div class="card">
+      <h3>Fully Responsive</h3>
+      <p>Optimized for mobile, tablet and desktop devices.</p>
+    </div>
+    <div class="card">
+      <h3>Smooth Animations</h3>
+      <p>Hover effects and transitions for better user experience.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Project 2 | Designed by You</p>
+</footer>
+
+</body>
+</html>
