@@ -19,7 +19,7 @@
     }
 
     header {
-      background: linear-gradient(135deg, #3f42f6, #3ad9f5);
+      background: linear-gradient(135deg, #3f42f6, #3ad9f5);                                      
       color: #292626;
       padding: 60px 20px;
       text-align: center;
@@ -144,16 +144,23 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     }
 
-    .contact {
-      text-align: center;
-      margin-top: 20px;
-    }
+     /* CONTACT */
+        .contact {
+            background: #f8f9fc;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
 
-    .contact p {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-      color: #334155;
-    }
+        .contact a {
+            color: #1cc88a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
 
     footer {
       background: #392245;
@@ -179,43 +186,7 @@
         font-size: 2rem;
       }
     }
-     /* Call Feature */
-    .call-box {
-      margin: 40px auto;
-      max-width: 400px;
-      background: #ffffff;
-      color: #000;
-      padding: 20px;
-      border-radius: 10px;
-    }
 
-    .call-box h2 {
-      margin-bottom: 15px;
-    }
-
-    .call-box input {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-
-    .call-box button {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      background: #3f42f6;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .call-box button:hover {
-      background: #2d30c9;
-    }
   </style>
 </head>
 <body>
@@ -265,29 +236,14 @@
   </section>
 
   <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: Hima******@gmail.com</p>
-    <p>Mobile: 77******** </p>
+    <h2>Contact</h2>
+        <div class="contact">
+            <p><strong>Email:</strong> Sainhimanshu746@gmail.com</p>
+            <p><strong>WhatsApp:</strong>
+                <a href="https://wa.me/917742713904" target="_blank">Chat on WhatsApp</a>
+            </p>
   </section>
-    <!-- CALL FEATURE -->
-  <div class="call-box">
-    <h2>Quick Call</h2>
-    <input type="tel" id="phoneNumber" placeholder="Enter phone number">
-    <button onclick="makeCall()">Call Now</button>
-  </div>
 
-  <script>
-    function makeCall() {
-      var number = document.getElementById("phoneNumber").value.trim();
-
-      if (number.length < 10) {
-        alert("Please enter a valid phone number");
-        return;
-      }
-
-      window.location.href = "tel:" + number;
-    }
-  </script>
   <footer>
     <div class="footer-content">
       <h3>Himanshu</h3>
@@ -300,6 +256,5 @@
       <p>© 2025 Himanshu. All Rights Reserved.</p>
     </div>
   </footer>
-
 </body>
 </html>
